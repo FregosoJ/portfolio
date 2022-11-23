@@ -42,6 +42,15 @@ aside {
   flex-wrap: wrap;
 }
 
+
+img {
+  display: flex;
+  size: 20%;
+  border-radius: 25px;
+  box-shadow: 8px 4px 8px;
+  margin: 20px;
+}
+
 section {
   flex: 70%;
   background-color: #fff;
