@@ -1,15 +1,88 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 
+body {
+  font-family:Impact, 'Arial Narrow Bold', sans-serif;
+  margin: 0;
+}
 
-  nav ul {
-    list-style: none;
-    display: flex;
-    flex-flow: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100%;
-    font-size: 1.75rem;
+header {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+  background: RGB(207,230,203);
+  color: rgb(102, 27, 102);
+}
+
+nav {
+  display: flex;
+  background-color:  rgba(102, 27, 102, 0.777);
+}
+
+a {
+  color: RGB(207,230,203);
+}
+
+nav p {
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+}
+
+aside {
+  flex: 30%;
+  background-color:RGB(207,230,203);
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+section {
+  flex: 70%;
+  background-color: #fff;
+  padding: 20px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #13293d;
+  color: #fff;
+}
+
+/* Image Placeholders */
+.sample-img {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+/* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
+
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+  header {
+    background:  #0a0683;
+  }
+}
+
+/* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+  nav {
+    background-color: #063d2a;
+  }
+}
+
+/* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+  .sample-img {
+    background-color: #8ad607df;
+  }
 }
