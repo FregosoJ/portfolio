@@ -6,20 +6,67 @@
 body {
   font-family:Impact, 'Arial Narrow Bold', sans-serif;
   margin: 0;
+  text-align: center;
+}
+/*main*/
+main {
+  display: flex;
+  margin: 1%;
+  flex-wrap: wrap;
+
 }
 
 header {
-  display: flex;
+  display: flex; 
   justify-content: center;
-  padding: 40px;
+  padding: 10px;
   text-align: center;
   background: RGB(207,230,203);
-  color: rgb(102, 27, 102);
+  color: rgb(6, 5, 6);
 }
 
+
+.card {
+  flex: 1 0 10;
+  padding: 10px;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+}
+
+ .card header {
+  padding: 20px;
+  background: black;
+  color: RGB(207,230,203);
+ }
+
 nav {
-  display: flex;
-  background-color:  rgba(102, 27, 102, 0.777);
+  background-color:  rgb(40, 39, 39);
+  
+}
+/* need to add hover for buttons */
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    font-size: 100%;
+    height: 75px;
+}
+
+h3::before {
+  font-family: Impact;
+  content: '\273A';
+  color: #772014;
+  margin-right: 5px;
+}
+
+
+li {
+  /* list-style: none;
+  align-items: center; */
 }
 
 a {
@@ -31,21 +78,21 @@ nav p {
   text-decoration: none;
 }
 
-main {
-  display: flex;
-}
+
 
 aside {
-  flex: 30%;
+  flex: 1;
   background-color:RGB(207,230,203);
   padding: 20px;
-  flex-wrap: wrap;
+  text-align: center;
+  background: black;
+  color: RGB(207,230,203);
 }
 
 
 img {
-  display: flex;
-  size: 20%;
+  /* display: flex; */
+  size: 10%;
   border-radius: 25px;
   box-shadow: 8px 4px 8px;
   margin: 20px;
@@ -53,9 +100,11 @@ img {
 
 section {
   flex: 70%;
-  background-color: #fff;
+  background-color:RGB(207,230,203);
   padding: 20px;
 }
+
+
 
 footer {
   padding: 20px;
@@ -78,20 +127,20 @@ footer {
 /* Tablets - header changes color */
 @media screen and (max-width: 992px) {
   header {
-    background:  #0a0683;
+    background: #031679df;
   }
 }
 
 /* Large smartphones - navbar changes color */
 @media screen and (max-width: 768px) {
   nav {
-    background-color: #063d2a;
+    background-color: #031679df;
   }
 }
 
 /* Small smartphones - image placeholders change color */
 @media screen and (max-width: 576px) {
   .sample-img {
-    background-color: #8ad607df;
+    background-color: #031679df;
   }
 }
