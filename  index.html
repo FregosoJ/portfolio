@@ -13,28 +13,34 @@
 <body>
     <!-- Header -->
     <header>
+      
       <h1>Jonathan Fregoso</h1>
     
-    </header>
+    
 
     <!-- Navbar -->
-    <nav>
-      <ul>  <div> 
-        
+    <nav class="button">
+      <ul>  
+        <div> 
         <!-- <button>Home</button>  -->
-
-        <a href="home">
-        <button style ="background-color:wheat; color:black; border-radius: 5px;">Home</button> 
-         </a>
+        <!-- <a href="#home">
+        <button style ="background-color:rgb(239, 241, 239); color:black; border-radius: 5px;">Home</button> 
+         </a> -->
 
         <!-- <button>About Me</button> -->
-        <button style ="background-color:wheat; color:black; border-radius: 5px;">About Me</button>
+        <a href="#about-me">
+        <button style ="background-color: rgba(196, 86, 196, 0.795); color:black; border-radius: 5px;">About Me</button>
+      </a>
 
          <!-- <button>Contact</button> -->
-         <button style ="background-color:wheat; color:black; border-radius: 5px;">Contact</button>
+        <a href="#contact">
+        <button style ="background-color: rgb(6, 5, 6); color:black; border-radius: 5px;">Contact</button>
+      </a>
  
         <!-- <button>Resources</button>  -->
-        <button style ="background-color:wheat; color:black; border-radius: 5px;">Work</button>
+        <a href="#work">
+        <button style ="background-color: rgb(6, 5, 6); color:black; border-radius: 5px;">Work</button>
+      </a>
   </div>
 </ul> 
          <!-- buttons on top -->
@@ -45,27 +51,29 @@
           <li> <a href="#Contact">Contact Me</a> </li> 
         </ul> -->
       </nav>
-      </nav>
+    </header>
 
     <!-- Body -->
     <main>
-      <aside class="card">
+      <aside class="card" id="about-me">
         <h2>Hello thank you for visiting</h2>
         <img src="./img/img_0019.jpeg" alt="portrait of Jonathan" style="width:20em; height:30em;"/>
-        <h3>about me </h3>
+        <nav class="me">
+        <h3>About Me </h3>
+      </nav>
         <p>Hello, my name is Jonathan Fregoso i am 35 years old i live in the city of LA, I am looking to achieve my goal to attain a new skill set in coding.</p>
       </aside>
 
 
        <!--My work-->
-      <section class=" card">
+      <section class=" card" id="work">
        <header>My Work</header>>
        <a href="https://github.com/FregosoJ/horseon-refactor">
         <img src="./img/horizon.jpg" alt="portrait of Jonathan" style="width:100%; height:30em;"/>
       </a>
       </section>
 
-      <section class="card">
+      <section class="card" >
         <header>Cooking</header>>
         <div class="img"></div>
         <a href="https://www.google.com">
@@ -74,7 +82,7 @@
         </p>
       </section>
 
-      <section class="card">
+      <section class="card" id="work">
         <header>Cooking</header>>
         <div class="img">
           <a href="https://www.google.com"This is a link to Google.com>
@@ -86,16 +94,18 @@
 
     <!-- Footer -->
     <footer>
-      <h5>Contact </h5>
-      <span>
+      <section class="card" id="contact">
+      <h5>Contact</h5>
+      <span class="buttom">
         <a href="tel:3103099157">310-309-9157</a>
       </span>
-      <span>
+      <span class="buttom">
       <a href="https://github.com/FregosoJ">Github</a>
     </span>
-    <span>
+    <span class="buttom">
       <a href="mailto:Jonathanjair@yahoo.com">Jonathanjair@yahoo.com</a>
     </span>
+  </section>
 
     </footer>
   </body>

@@ -17,12 +17,17 @@ main {
 }
 
 header {
-  display: flex; 
+  /* display: flex;  */
   justify-content: center;
   padding: 10px;
   text-align: center;
   background: RGB(207,230,203);
   color: rgb(6, 5, 6);
+}
+
+h1 {
+  position: fixed;
+  align-items: flex-end;
 }
 
 
@@ -48,7 +53,8 @@ section {
 }
 
 nav {
-  background-color:  rgb(40, 39, 39);
+  align-content: flex-end;
+  align-items:flex-start;
   
 }
 /* need to add hover for buttons */
@@ -63,22 +69,11 @@ nav ul {
     height: 75px;
 }
 
-h3::before {
-  font-family: Impact;
+
+.me::after{
   content: '\273A';
   color: #772014;
-  margin-right: 5px;
 }
-
-
-li {
-  list-style: none;
-  align-items: center;
-}
-
-/* a {
-  color: RGB(207,230,203);
-} */
 
 nav p {
   padding: 14px 20px;
@@ -92,13 +87,12 @@ aside {
   background-color:RGB(207,230,203);
   padding: 20px;
   text-align: center;
-  background: black;
+  background: rgba(0, 0, 0, 0.67);
   color: RGB(207,230,203);
 }
 
 
 img {
-  display: flex;
   border-radius: 25px;
   box-shadow: 8px 4px 8px;
   margin: 20px;
@@ -111,7 +105,10 @@ section {
   height: 100%;
 }
 
-
+.buttom {
+/* background-color: rgb(220, 207, 60);
+color:blue; */
+}
 
 footer {
   padding: 20px;
@@ -125,8 +122,8 @@ footer {
   background-color: #fff;
   width: 70%;
   padding: 20px;
-  /* height: 200px;
-  border: 1px solid rgb(237, 21, 21); */
+  height: 200px;
+  border: 1px solid rgb(237, 21, 21);
 }
 
 /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
@@ -141,13 +138,13 @@ footer {
 /* Large smartphones - navbar changes color */
 @media screen and (max-width: 768px) {
   nav {
-    background-color: #031679df;
+    background-color: #480379df;
   }
 }
 
 /* Small smartphones - image placeholders change color */
 @media screen and (max-width: 576px) {
   .sample-img {
-    background-color: #031679df;
+    background-color: #798cecdf;
   }
 }
