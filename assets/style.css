@@ -8,12 +8,12 @@ body {
   margin: 0;
   text-align: center;
 }
+
 /*main*/
 main {
   display: flex;
   margin: 1%;
   flex-wrap: wrap;
-
 }
 
 header {
@@ -28,16 +28,17 @@ header {
 h1 {
   position: fixed;
   align-items: flex-end;
+  color:rgba(196, 86, 196, 0.795);
 }
 
 
+
 .card {
-  flex: 1 0 10;
+  flex: 0 3 1;
   padding: 10px;
-  text-align: center;
   border-style: solid;
-  border-width: 1px;
-  width: 75%;
+  border-width: 3px;
+  height: auto;
 }
 
  .card header {
@@ -83,7 +84,7 @@ nav p {
 
 
 aside {
-  flex: 1;
+  flex: 0;
   background-color:RGB(207,230,203);
   padding: 20px;
   text-align: center;
@@ -101,13 +102,7 @@ img {
 section {
   flex: 70%;
   background-color:RGB(207,230,203);
-  padding: 200px;
   height: 100%;
-}
-
-.buttom {
-/* background-color: rgb(220, 207, 60);
-color:blue; */
 }
 
 footer {
@@ -115,15 +110,6 @@ footer {
   text-align: center;
   background: #13293d;
   color: #fff;
-}
-
-/* Image Placeholders */
-.sample-img {
-  background-color: #fff;
-  width: 70%;
-  padding: 20px;
-  height: 200px;
-  border: 1px solid rgb(237, 21, 21);
 }
 
 /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
